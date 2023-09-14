@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>MusicPlayer</title>
+  </head>
+  <body>
+    <div class="whole-content">
+      <nav class="headd">
+        <svg class="icon-down icons-size-head icon-heart">
+          <use xlink:href="images/symbol-defs.svg#icon-heart"></use>
+        </svg>
+
+        <span class="txt-play">Now Playing</span>
+        <div class="lc">
+          <input type="checkbox" class="checkbox" id="dots" />
+          <label for="dots" class="label-dots">
+            <svg class="icon-dots icons-size-head">
+              <use
+                xlink:href="images/sprite.svg#icon-dots-three-horizontal"
+              ></use>
+            </svg>
+          </label>
+          <div class="background">&nbsp;</div>
+          <nav class="dots-label hidden">
+            <ul class="nav-list">
+              <li class="nav-items">
+                <a href="#" class="nav-link"></a>Add to favourite
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-link"></a>AudioTrim
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-link"></a>Share song file
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-link"></a>Set as ringtone
+              </li>
+              <li class="nav-items"><a href="#" class="nav-link"></a>Delete</li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+      <div class="img-container">
+        <img src="" alt="" class="songimg" />
+      </div>
+      <div class="songname">
+        <h3>Dippam Dappam</h3>
+      </div>
+      <div class="singers">
+        <p>Anirudh Ravichander, Anthony Daasan</p>
+      </div>
+      <div class="timer-line">
+        <div class="timer-line-inside"></div>
+      </div>
+      <div class="timingfun">
+        <span class="starting">0.02</span>
+        <span class="duration">3.45</span>
+      </div>
+      <audio src="" class="mainAudio"></audio>
+      <div class="section-bottom">
+        <span
+          class="material-symbols-outlined icon-suffle icon-side"
+          title="playlist looped"
+        >
+          repeat
+        </span>
+        <svg class="icon-before icons-size-bottom iconchange">
+          <use xlink:href="images/sprite.svg#icon-backward "></use>
+        </svg>
+
+        <svg class="icon-play icons-size-bottom icon-play">
+          <use xlink:href="images/spritess.svg#icon-play3"></use>
+        </svg>
+
+        <svg class="icon-after icons-size-bottom iconchange">
+          <use xlink:href="images/sprite.svg#icon-forward2"></use>
+        </svg>
+        <svg class="icon-library icons-size-bottom icon-side musicplay">
+          <use xlink:href="images/symbol-defs.svg#icon-music-playlist"></use>
+        </svg>
+      </div>
+      <div class="library-container hidden">
+        <div class="music-list">
+          <div class="icon">
+            <svg class="icon-library icons-size-bottom musiclist-table musicc">
+              <use
+                xlink:href="images/symbol-defs.svg#icon-music-playlist"
+              ></use>
+            </svg>
+          </div>
+          <h3 class="hh">Music Lists</h3>
+
+          <svg class="icon-library icons-size-bottom musiclist-table wrong">
+            <use xlink:href="images/symbol-defs1.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="song-container">
+          <ul class="songs"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
